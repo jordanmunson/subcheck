@@ -31,8 +31,8 @@
                (-d) is set to 0 or lower it will be disabled
                
 0.75a:
-    *[BUGFIX]  Fixed [syntax error at /usr/bin/subcheck line 637, near "print"
-                      Execution of /usr/bin/subcheck aborted due to compilation errors.]               
+    *[BUGFIX]  Fixed [syntax error at //usr/local/bin/subcheck line 637, near "print"
+                      Execution of //usr/local/bin/subcheck aborted due to compilation errors.]               
                       
 0.76:
     *[CHANGED] Subcheck now shows the complete optionlist as default message
