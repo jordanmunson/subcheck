@@ -1,0 +1,77 @@
+0.72a:
+    *Changed the default settings.
+     -Lines are now shorter and chars get longer displaytime.
+
+0.73:
+    *Fixed overlapping bug when using $minTimeSubUnit.
+    *Added script 'all-checksub' which checks all subtitles in the current
+     directory recursivly (linux/unix only)
+
+0.74:
+    *Better overlapping check
+
+0.74a:
+    *Better detection of 'credits'
+    
+0.75:
+    *[CHANGED] Default line length (-c) from 41 to 40
+    *[CHANGED] Default milliseconds between two subtitle units (-s) 
+               from 100 to 10
+    *[BUGFIX]  It will now write the last subtitle unit
+    *[BUGFIX]  Minimal duration of a subtitle unit will now handle all short 
+               subtitle units
+    *[NEW]     Added a new readonly (-r) option
+    *[NEW]     Added an option that only rewrite subtitle if it exceeds maximal
+               characters per line but don't rewrite duration (-b)
+    *[NEW]     Added an option that only rewrite subtitle if it exceeds maximal
+               characters per line and rewrite duration (-B)
+    *[NEW]     Added an option that only rewrite subtitle if it's duration is 
+               to short (-T)
+    *[CHANGED] If the option "Minimal duration of a subtitle unit in milliseconds" 
+               (-d) is set to 0 or lower it will be disabled
+               
+0.75a:
+    *[BUGFIX]  Fixed [syntax error at /usr/bin/subcheck line 637, near "print"
+                      Execution of /usr/bin/subcheck aborted due to compilation errors.]               
+                      
+0.76:
+    *[CHANGED] Subcheck now shows the complete optionlist as default message
+    *[NEW]     Added a manpage with some information
+    *[NEW]     Now it has a makefile for installation
+
+0.76.1:
+    *[BUGFIX]  Now subcheck also works on Microsoft Windows platforms
+    *[NEW]     Added an INSTALL document
+    *[CHANGED] Changed the name of the script from subcheck to subcheck.pl
+               Now it's more compatible with Windows
+    *[CHANGED] Did some code cleanup
+
+0.77:
+    *[CHANGED] floor doesn't need POSIX module anymore.
+    *[BUGFIX]  Options -b and -B are now fully working.
+               They won't do the same thing now.
+    *[NEW]     Added a -q quiet mode.
+    *[CHANGED] Rounding of duration has been changed.
+               It's now more accurate.
+    *[BUGFIX]  Now single/last subtitle-units get correct duration settings.
+    
+0.78:
+    *[BUGFIX]  Now the last subtitle units without a trailing CR will also be processed.
+    *[CHANGED] Added (-t) and (-B) option as default to all-checksub script.
+    *[CHANGED] subcheck is now subcheck.pl in all-checksub script. So it's working again.
+    *[BUGFIX]  Fixed a few overlap problems.
+    *[CHANGED] Added a URL to the website with some information in the mainscreen.
+
+0.78.1:
+    *[BUGFIX]  Fixed some minor rounding problems
+    *[CHANGED] Improved Makefile so it is possible to use it with the source from the CVS.
+
+0.78.2:
+    *[BUGFIX]  The minimal duration (-d) of a subtitle unit is now working again.
+    *[CHANGED] The minimal duration (-d) options is now set to 600 ms as default value.
+    *[CHANGED] Added quiet mode (-q) option to all-checksub script. 
+    *[CHANGED] When a subtitle is marked as a credit the unit will not be check further by other tests.
+
+0.78.2a:
+    *[BUGFIX]  Script stopped when the first subtitle is a bogus unit
+    *[CHANGED] Now printed strings will be in UTF-8 encoding.

@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "Checking all srt files in this directory..."
+
+find . -name "*.srt" -exec subcheck.pl -t -B -q -i {} \;
+
+echo "Checking of all srt files in this directory done..."

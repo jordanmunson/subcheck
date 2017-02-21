@@ -1,0 +1,25 @@
+Installation on Linux/Unix
+----------------------------
+
+[Requirements]:
+GNU make (For installation)
+Perl
+ 
+[Install]:
+You have to be root for the installation.
+Execute to install the scripts and manpage:
+# make install
+
+Now subcheck.pl and all-checksub and installed in /usr/bin
+
+
+Installation on MS Windows:
+---------------------------
+[Requirements]:
+Perl (get it at http://www.activeperl.com/)
+ 
+[Install]:
+There is no actual installation for MS Windows.
+The only thing you have to do is to open a command-line
+such as "command.com". Now go to the directory where subcheck.pl
+is located. And run it just like a normal executable.
