@@ -8,8 +8,8 @@ This repository is so when I share this with my coworkers I don't need to instru
 
 ## Requirements
 
-GNU make (For installation)
-Perl
+- GNU make (For installation)
+- Perl
 
 ## Installation
 
