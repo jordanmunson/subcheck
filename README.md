@@ -32,19 +32,19 @@ To use this tool, you'll always start with `subcheck.pl` -- here's the manual:
    -i   : Input file                                          ()
    -o   : Output file                                         (Input file)
    -m   : Number of milliseconds per character                (60)
-   -l   : Line count per subtitle unit                        (2)
-   -s   : Time in milliseconds between two subtitle units     (10)
-   -f   : Disable fix negative duration of subtitle units     (FALSE)
+   -l   : Line count per subtitle                             (2)
+   -s   : Time in milliseconds between two subtitle           (10)
+   -f   : Disable fix negative duration of subtitle           (FALSE)
    -t   : Disable remove tags                                 (FALSE)
-   -d   : Minimal duration of a subtitle unit in milliseconds (600)
-   -c   : Maximal characters per line                         (40)
+   -d   : Minimal duration of a subtitle      in milliseconds (600)
+   -c   : Maximum characters per line                         (40)
    -e   : Disable check for errors in the text lines          (FALSE)
    -r   : Readonly mode, shows errors and quit (overwrites -o)(FALSE)
-   -b   : Only rewrite subtitle if it exceeds maximal
+   -b   : Only rewrite subtitle if it exceeds maximum
           characters per line but don't rewrite duration      (FALSE)
-   -B   : Only rewrite subtitle if it exceeds maximal
+   -B   : Only rewrite subtitle if it exceeds maximum
           characters per line and rewrite duration            (FALSE)
-   -T   : Only rewrite subtitle if it's duration is to short  (FALSE)
+   -T   : Only rewrite subtitle if it s duration is too short  (FALSE)
    -q   : Quiet mode                                          (FALSE)
 ```
 
