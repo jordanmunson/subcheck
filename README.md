@@ -13,7 +13,7 @@ This repository is so when I share this with my coworkers I don't need to instru
 
 ## Installation
 
-Close this repository (for the uninitiated, [here is a guide](https://help.github.com/articles/cloning-a-repository/), and from that directory run `make install`, which should handle the rest based on the Makefile. This will install the subcheck files into the location they need to be for you run it from your terminal.
+Clone this repository (for the uninitiated, [here is a guide](https://help.github.com/articles/cloning-a-repository/), and from that directory run `make install`, which should handle the rest based on the Makefile. This will install the subcheck files into the location they need to be for you run it from your terminal.
 
 ## Installation Troubleshooting
 
