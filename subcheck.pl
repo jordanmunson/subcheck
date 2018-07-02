@@ -634,8 +634,10 @@ sub checkToKeepSub {
             # Print message if the subtitle length is to long
             if (getMaxLength(getTextLines($total)) > $maxCharsLine) {
                 if (!$quietMode) {
-                    print "Subtitle unit " . getSubNumber($total) . " is " . getMaxLength(getTextLines($total)) .
-                        " characters long. This is bigger than the given " . $maxCharsLine . "\n";
+                    print "\n------------------------------------------------------\n";
+                    print "Subtitle " . getSubNumber($total) . " is " . getMaxLength(getTextLines($total)) .
+                        " characters long. This is larger than the max character count of " . $maxCharsLine . ".\n";
+                    print "------------------------------------------------------\n";
                 }
             }
             
@@ -647,8 +649,8 @@ sub checkToKeepSub {
                      (!$onlyToBig && !$onlyToBigTime && !$onlyShortTime))){
                     if (!$quietMode) {
                         print "\n------------------------------------------------------\n";
-                        print getSubNumber($total) . " has a to short duration.\n";
-                        print "it's duration is $len and it should be " . $chars * $msecsChar . "\n";
+                        print "Subtitle " . getSubNumber($total) . " is too short.";
+                        print " Its duration is $len but should be " . $chars * $msecsChar . ".\n";
                         print "------------------------------------------------------\n";
                     }
                 }
