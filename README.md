@@ -13,7 +13,7 @@ This repository is so when I share this with my coworkers I don't need to instru
 
 ## Installation
 
-Clone this repository (for the uninitiated, [here is a guide](https://help.github.com/articles/cloning-a-repository/), and from that directory run `make install`, which should handle the rest based on the Makefile. This will install the subcheck files into the location they need to be for you run it from your terminal.
+Clone this repository (for the uninitiated, [here is a guide](https://help.github.com/articles/cloning-a-repository/)), and from that directory run `make install`, which should handle the rest based on the Makefile. This will install the subcheck files into the location they need to be for you run it from your terminal.
 
 ## Installation Troubleshooting
 
@@ -50,10 +50,17 @@ To use this tool, you'll always start with `subcheck.pl` -- here's the manual:
 
 ## Examples
 
-Running default autofixes a file, which should be run _in the directory featuring the busted file:
+Running default autofixes a file, which should be run _in the directory featuring the file you want to work on_ (or the file references should be extended file paths):
 
 ```
 subcheck.pl -i busted_file.srt -o new_fixed_file.srt
 ```
 
-That will create a new file in the same directory with automatic fixes applied based on Subcheck's defaults.
+That will create a new file in the same directory with automatic fixes applied based on Subcheck's defaults. You can adjust those defaults as you choose.
+
+
+```
+subcheck.pl -c 65 -i busted_file.srt -o new_fixed_file.srt
+```
+
+In this instance we're fixing a file automatically with defaults, but overriding the maximum characters per line.
